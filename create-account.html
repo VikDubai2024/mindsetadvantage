@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account - Mindset Advantage</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<style>
+    body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Impact [sans-serif';
+            text-align: center;
+            padding: 1em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            padding: 0.5em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: #105720;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: loose;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+    max-width: 160px; 
+    height: auto;
+    margin-right: 20px; 
+    margin-bottom: 10px; 
+}
+    .registration-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .form-input {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .form-button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-button:hover {
+        background-color: #105720;
+    }
+
+    .back-to-login-link {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .back-to-login-link a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+    .back-to-login-link a:hover {
+        text-decoration: underline;
+    }
+
+    .back-to-contact-button {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .back-to-contact-button button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .back-to-contact-button button:hover {
+        background-color: #555;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MINDSET ADVANTAGE</h1>
+        </div>
+        <div class="container">
+            <img src="img/mindset-logo.png" alt="Logo" class="logo">
+         </div>
+    </header>
+
+    <nav>
+        <div class="container futuristic-nav">
+            <a href="index.html">Home</a>
+            <a href="mentalstrategies.html">Mental Strategies</a>
+            <a href="mindset.html">Mindset</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section id="create-account" class="container futuristic-section">
+        <div class="registration-container">
+            <h2>Create an Account</h2>
+            <form class="registration-form" action="process-registration.php" method="post">
+                <input type="text" class="form-input" placeholder="Date of Birth (YYYY-MM-DD)" name="dob" required>
+                <input type="email" class="form-input" placeholder="Email" name="email" required>
+                <input type="text" class="form-input" placeholder="Username" name="username" required>
+                <input type="password" class="form-input" placeholder="Password" name="password" required>
+                <input type="password" class="form-input" placeholder="Confirm Password" name="confirm_password" required>
+                <input type="text" class="form-input" placeholder="Phone Number (optional)" name="phone">
+                <button type="submit" class="form-button">Create Account</button>
+            </form>
+            <div class="back-to-login-link">
+                <p>Already have an account? <a href="contact.html">Back to login</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Mindset Advantage</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
